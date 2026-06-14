@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Block x.com/home",
+  "version": "1.0.0",
+  "description": "Blocks https://x.com/home and only https://x.com/home.",
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*"],
+      "js": ["block.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ]
+}
